@@ -1,0 +1,13 @@
+# All compiled files
+*.class
+
+# Bin dir
+bin/
+
+# Vscode config
+.vscode/
+
+# To undo track:
+# git rm -r --cached bin
+# git rm -r --cached *.class
+# git rm -r --cached .vscode
