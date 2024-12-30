@@ -1,11 +1,11 @@
-package utils;
+package util;
 
 import java.io.IOException;
 
 public class Utils {
 
   public static void pressKey() {
-    System.out.println("Press Any Key to Continue...");
+    System.out.println("\nPress Any Key to Continue...");
     
     try {
         System.in.read();

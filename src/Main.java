@@ -1,6 +1,9 @@
+import controller.ArrayController;
 import java.util.Scanner;
-import menus.ArrayMenu;
-import utils.*;
+import model.ArrayModel;
+import util.*;
+import view.ArrayView;
+
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -13,22 +16,23 @@ public class Main {
 
             System.out.println("Pick a Data Structure:\n");
             System.out.println("1. Array");
-            System.out.println("2. ");
-            System.out.println("9. Exit\n\n");
+            System.out.println("2. Stacks");
+            System.out.println("9. Exit");
             
-            System.out.print("> ");
+            System.out.print("\n\n> ");
             
             choice = sc.nextInt();
 
             switch(choice) {
                 case 1:
-                    ArrayMenu arrMenu = new ArrayMenu();
-                    arrMenu.displayMenu();
-
-                break;
+                    ArrayModel model = new ArrayModel();
+                    ArrayView view = new ArrayView();
+                    ArrayController controller = new ArrayController(model, view);
+                    controller.run();
+                    break;
 
                 case 2:
-                
+                    
                 break;
                 
                 case 9:
